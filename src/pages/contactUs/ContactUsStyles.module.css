@@ -1,0 +1,26 @@
+.conatct_headers {
+  font-family: Yantramanav;
+  font-weight: 500;
+  color: #212529;
+  font-size: 3rem;
+}
+
+.Contact_dummy_btn {
+  background-color: #e3e9f9 !important;
+  color: #1451d8 !important;
+  font-family: DM Sans;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  border: 0px !important;
+  border-radius: 50px !important;
+}
+
+.contact_header {
+  background-color: #f6f8fc;
+}
+
+.conatct_subtext {
+  font-family: DM Sans;
+  font-size: 18px;
+  color: rgba(28, 28, 28, 0.8);
+}

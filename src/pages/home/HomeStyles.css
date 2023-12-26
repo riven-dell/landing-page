@@ -1,0 +1,14 @@
+#home .nav-link {
+  color: rgb(75, 75, 75);
+  font-family: Yantramanav;
+}
+
+#home .nav-link.active {
+  background-color: black !important;
+  color: rgb(247, 247, 247);
+  font-family: Yantramanav;
+
+  font-weight: 400;
+  padding-left: 24px;
+  padding-right: 24px;
+}

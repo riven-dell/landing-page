@@ -1,0 +1,31 @@
+.nav_bar {
+  border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.lets_talk_header {
+  font-family: DM Sans;
+  font-size: 14px !important;
+  border-radius: 50px !important;
+}
+
+.nav_link {
+  text-decoration: none !important;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(81, 67, 67) !important;
+}
+
+.nav_link:hover {
+  color: rgb(124, 124, 124) !important;
+}
+
+.services_down_icon {
+  margin-left: -15px !important;
+  margin-top: 3px;
+}
+
+.card_mod_down {
+  border: 0px !important;
+  background-color: #f2f4f8 !important;
+}

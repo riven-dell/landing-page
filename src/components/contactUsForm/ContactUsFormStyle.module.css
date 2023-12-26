@@ -1,0 +1,72 @@
+.card_mod_contact {
+  border: 0px !important;
+  background-color: #f3f6fc;
+}
+
+.contact {
+  font-family: syne;
+  font-weight: 500;
+  color: #1451d8;
+  font-size: 10px;
+  letter-spacing: 6px;
+}
+
+.connect_style {
+  font-family: Yantramanav;
+  font-weight: 700;
+  color: #212529;
+  font-size: 3rem;
+  margin-top: -15px;
+}
+
+.reach_out {
+  font-family: DM Sans;
+  font-size: 14px;
+  color: #212529;
+  margin-top: -10px;
+}
+
+.email_color {
+  color: #1451d8;
+}
+
+.contact_form_lable {
+  font-family: DM Sans;
+  font-size: 13px;
+  color: #353c43;
+}
+
+.contact_form_input::placeholder {
+  font-size: 14px;
+  color: #999ea4;
+}
+
+.hrs {
+  border: 1px solid rgb(206, 206, 206);
+}
+
+.show_num {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 36px;
+  color: #212529;
+}
+
+.show_num_subtext {
+  color: #1451d8;
+  font-family: DM Sans;
+  font-size: 14px;
+  margin-top: -15px !important;
+}
+
+.contact_info {
+  font-family: DM Sans;
+  color: #212529;
+  font-weight: 600;
+}
+
+.email_color_conatc_form {
+  color: #353c43;
+  font-size: 14px;
+  margin-top: -10px;
+}

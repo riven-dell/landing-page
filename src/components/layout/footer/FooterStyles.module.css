@@ -1,0 +1,68 @@
+.footer_bg {
+  background-color: #1c1c1c;
+}
+
+.footer_logo_subtext {
+  color: rgb(212, 212, 212);
+  font-family: DM Sans;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.left_border {
+  border-left: 1px solid rgb(159, 159, 159);
+}
+
+.input_email_text {
+  background-color: transparent !important;
+  border: 1px solid rgb(104, 104, 104) !important;
+  color: aliceblue !important;
+  font-size: 14px !important;
+  width: 260px !important;
+  height: 35px !important;
+}
+
+.input_email_text::placeholder {
+  color: rgb(183, 183, 183) !important;
+}
+
+.started_font {
+  font-family: yantramanav;
+  font-weight: 500;
+  color: aliceblue;
+  font-size: 24px;
+}
+
+.started_font_subtext {
+  font-family: DM Sans;
+  font-size: 14px;
+  color: rgb(196, 196, 196);
+}
+
+.hrs {
+  border: 1px solid rgb(184, 184, 184);
+}
+
+.footer_heads {
+  color: aliceblue;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer_subheads {
+  color: rgb(192, 192, 192);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footer_icons {
+  color: rgb(192, 192, 192);
+}
+
+.copyright {
+  color: rgb(192, 192, 192);
+
+  font-size: 14px;
+}
