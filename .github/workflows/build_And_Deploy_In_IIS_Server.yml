@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: IIS_Runner
+    runs-on: IIS_Server
 
     strategy:
       matrix:
