@@ -28,4 +28,10 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build 
+
+    - name: Deploy to IIS server
+    - run: |
+        iisreset /stop
+        xcopy /s /y .\dist\* C:\ReactApplication\dist
+        iisreset /start
   
