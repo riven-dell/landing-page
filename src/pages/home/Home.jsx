@@ -21,7 +21,7 @@ const Home = () => {
         <Container>
           <Row className="py-5">
             <Col xl={5}>
-              <p className={Styles.hero_top_header}>EMPOWERMENT</p>
+              <p className={Styles.hero_top_header}>EMPOWERMENTS</p>
               <p className={`${Styles.hero_header}`}>
                 Seamless IT for your business, boosting your growth.
               </p>
