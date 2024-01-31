@@ -13,12 +13,11 @@ jobs:
   # Your build and test steps go here if needed
 
   - task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: |
-      # Write your PowerShell commands here.
-      
-       Get-Website | Select-Object -Property Name
+    inputs:
+      targetType: 'inline'
+      script: |
+        # Write your PowerShell commands here.
+        Get-Website | Select-Object -Property Name
 
   - task: IISWebAppManagementOnMachineGroup@0
     displayName: 'Stop IIS App Pool'
@@ -39,4 +38,3 @@ jobs:
       EnableIISHttps: false
       IISWebSite: 'Dotnet'  # Verify this matches your actual IIS site name
       AppPoolName: 'Dotnet'
-
