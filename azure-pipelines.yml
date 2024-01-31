@@ -6,33 +6,31 @@
 trigger:
 - main
 
-jobs:
-- job: MyJob
-  agent:
-    machine: 'I22249'
+pool:
+  name: Ec2_Instance
 
-  steps:
-  - task: Bash@3
-    inputs:
-      targetType: 'inline'
-      script: 'dir'
-  - task: Npm@1
-    inputs:
-      command: 'install'
-  - task: Npm@1  
-    displayName: Build  
-    inputs: 
-      command: custom  
-      verbose: false  
-      customCommand: 'run build'    
+steps:
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'dir'
+- task: Npm@1
+  inputs:
+    command: 'install'
+- task: Npm@1  
+  displayName: Build  
+  inputs: 
+    command: custom  
+    verbose: false  
+    customCommand: 'run build'    
 
-  - task: CopyFiles@2
-    inputs:
-      SourceFolder: '$(System.DefaultWorkingDirectory)/dist'
-      Contents: '**'
-      TargetFolder: '$(Build.ArtifactStagingDirectory)'
-  - task: PublishBuildArtifacts@1
-    inputs:
-      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      ArtifactName: 'quizapp'
-      publishLocation: 'Container'
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)/dist'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'quizapp'
+    publishLocation: 'Container'    
