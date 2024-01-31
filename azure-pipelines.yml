@@ -15,7 +15,6 @@ jobs:
   - task: IISWebAppManagementOnMachineGroup@0
     displayName: 'Stop IIS App Pool'
     inputs:
-      IISDeploymentType: 'IIS'
       ActionIISAppPool: 'StopAppPool'
       EnableIISHttps: false
       IISWebSite: 'Dotnet'
@@ -28,7 +27,6 @@ jobs:
   - task: IISWebAppManagementOnMachineGroup@0
     displayName: 'Start IIS App Pool'
     inputs:
-      IISDeploymentType: 'IIS'
       ActionIISAppPool: 'StartAppPool'
       EnableIISHttps: false
       IISWebSite: 'Dotnet'
