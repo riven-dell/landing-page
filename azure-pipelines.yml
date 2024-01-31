@@ -7,7 +7,8 @@ trigger:
 - main
 
 pool:
-  name: EC2AMAZ-HUQ7UFJ
+  name: default
+  agent: EC2AMAZ-HUQ7UFJ
 
 steps:
 - task: Bash@3
