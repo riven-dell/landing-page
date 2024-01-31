@@ -12,12 +12,18 @@ jobs:
 
   # Your build and test steps go here if needed
 
+  - script: |
+      # List all IIS sites for diagnostic purposes
+      Import-Module WebAdministration
+      Get-WebSite
+    displayName: 'List IIS Sites'
+
   - task: IISWebAppManagementOnMachineGroup@0
     displayName: 'Stop IIS App Pool'
     inputs:
       ActionIISAppPool: 'StopAppPool'
       EnableIISHttps: false
-      IISWebSite: 'Dotnet'
+      IISWebSite: 'Dotnet'  # Verify this matches your actual IIS site name
       AppPoolName: 'Dotnet'
 
   - script: |
@@ -29,5 +35,6 @@ jobs:
     inputs:
       ActionIISAppPool: 'StartAppPool'
       EnableIISHttps: false
-      IISWebSite: 'Dotnet'
+      IISWebSite: 'Dotnet'  # Verify this matches your actual IIS site name
       AppPoolName: 'Dotnet'
+
