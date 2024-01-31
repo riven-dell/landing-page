@@ -14,23 +14,3 @@ steps:
   inputs:
     targetType: 'inline'
     script: 'dir'
-- task: Npm@1
-  inputs:
-    command: 'install'
-- task: Npm@1  
-  displayName: Build  
-  inputs: 
-    command: custom  
-    verbose: false  
-    customCommand: 'run build'    
-
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)/dist'
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'quizapp'
-    publishLocation: 'Container'    
