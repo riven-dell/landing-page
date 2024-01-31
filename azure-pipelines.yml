@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: Ec2_Instance
+  Ec2_Instance
 
 steps:
 - task: Bash@3
