@@ -20,21 +20,19 @@ jobs:
         Get-Website | Select-Object -Property Name
 
   - task: IISWebAppManagementOnMachineGroup@0
-    displayName: 'Stop IIS App Pool'
     inputs:
-      ActionIISAppPool: 'StopAppPool'
-      EnableIISHttps: false
-      IISWebSite: 'Dotnet'  # Verify this matches your actual IIS site name
-      AppPoolName: 'Dotnet'
+      EnableIIS: true
+      IISDeploymentType: 'IISWebsite'
+      ActionIISWebsite: 'StopWebsite'
+      StartStopWebsiteName: 'Dotnet'
 
   - script: |
       xcopy "$(System.DefaultWorkingDirectory)" "C:\Dotnet" /E /Y
     displayName: 'Deploy to IIS'
 
+
   - task: IISWebAppManagementOnMachineGroup@0
-    displayName: 'Start IIS App Pool'
     inputs:
-      ActionIISAppPool: 'StartAppPool'
-      EnableIISHttps: false
-      IISWebSite: 'Dotnet'  # Verify this matches your actual IIS site name
-      AppPoolName: 'Dotnet'
+      IISDeploymentType: 'IISWebsite'
+      ActionIISWebsite: 'StartWebsite'
+      StartStopWebsiteName: 'Dotnet'
