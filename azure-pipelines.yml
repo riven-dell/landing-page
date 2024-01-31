@@ -1,17 +1,35 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- main
+- master
 
 pool:
-  Ec2_Instance
+  name: Ec2_Instance
 
-steps:
-- task: IISWebAppDeploymentOnMachineGroup@0
-  inputs:
-    WebSiteName: 'Dotnet'
-    VirtualApplication: 'C:\Dotnet'
-    Package: '$(System.DefaultWorkingDirectory)\**\*.zip'
+jobs:
+- job: DeployToIIS
+  displayName: 'Deploy to IIS'
+  steps:
+  - checkout: self
+
+  # Your build and test steps go here if needed
+
+  - task: IISWebAppManagementOnMachineGroup@0
+    displayName: 'Stop IIS App Pool'
+    inputs:
+      IISDeploymentType: 'IIS'
+      ActionIISAppPool: 'StopAppPool'
+      EnableIISHttps: false
+      IISWebSite: 'Dotnet'
+      AppPoolName: 'Dotnet'
+
+  - script: |
+      xcopy "$(System.DefaultWorkingDirectory)" "C:\Dotnet" /E /Y
+    displayName: 'Deploy to IIS'
+
+  - task: IISWebAppManagementOnMachineGroup@0
+    displayName: 'Start IIS App Pool'
+    inputs:
+      IISDeploymentType: 'IIS'
+      ActionIISAppPool: 'StartAppPool'
+      EnableIISHttps: false
+      IISWebSite: 'Dotnet'
+      AppPoolName: 'Dotnet'
