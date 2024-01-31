@@ -14,3 +14,6 @@ steps:
   inputs:
     targetType: 'inline'
     script: 'dir'
+- task: Npm@1
+  inputs:
+    command: 'install'
