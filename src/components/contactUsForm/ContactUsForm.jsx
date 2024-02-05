@@ -7,7 +7,7 @@ const ContactUsForm = () => {
   return (
     <div className="my-4">
       <Container>
-        <Row className="mx-5">
+        <Row className="mx-lg-5">
           <Col xl={{ span: 7 }}>
             <Card className="border border-0 my-5">
               <Card.Body className={`py-4 px-5 ${Styles.card_mod_contact}`}>
@@ -20,7 +20,7 @@ const ContactUsForm = () => {
                 <hr className={Styles.hrs} />
                 <Form>
                   <Row>
-                    <Col>
+                    <Col xs={12} lg={0}>
                       <Form.Label className={Styles.contact_form_lable}>
                         First Name
                       </Form.Label>
@@ -29,7 +29,7 @@ const ContactUsForm = () => {
                         placeholder="First name"
                       />
                     </Col>
-                    <Col>
+                    <Col xs={12} lg={0} className="mt-3 mt-xl-0">
                       <Form.Label className={Styles.contact_form_lable}>
                         Last Name
                       </Form.Label>
@@ -85,8 +85,8 @@ const ContactUsForm = () => {
             </Card>
           </Col>
           <Col xl={5}>
-            <Card className="border border-0 my-5 mx-5">
-              <Card.Body className={`py-5 px-5 ${Styles.card_mod_contact}`}>
+            <Card className="border border-0 my-5 mx-xl-5">
+              <Card.Body className={`py-5 px-5 text-center text-lg-start ${Styles.card_mod_contact}`}>
                 <p className={Styles.show_num}>97%</p>
                 <p className={Styles.show_num_subtext}>Client Satisfaction</p>
                 <hr className={`my-4 ${Styles.hrs}`} />

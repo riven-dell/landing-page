@@ -29,17 +29,17 @@ const Home = () => {
                 We provide the expertise and support to propel your business
                 forward in the digital landscape.
               </p>
-              <Button className="btn-sm px-3 py-1 rounded-pill">
+              <Button className="btn-sm px-3 py-2 rounded-pill">
                 Our Services
               </Button>
               <Button
-                className={`btn-sm px-3 py-1 rounded-pill ms-2 ${Styles.lets_talk_btn}`}
+                className={`btn-sm px-3 py-2 rounded-pill ms-2 ${Styles.lets_talk_btn}`}
               >
                 Let's Talk <GoArrowUpRight />
               </Button>
             </Col>
-            <Col xl={7} className="mx-auto text-center">
-              <img src="src/assets/bg1-1.png" width={500} alt="" />
+            <Col xl={7} className="mx-auto text-center d-none d-lg-block">
+              <img src="src/assets/bg1-1.png" width={500} className="img-fluid" alt="" />
             </Col>
           </Row>
 
@@ -61,7 +61,7 @@ const Home = () => {
                       </div>
                     </Stack>
                   </Col>
-                  <Col></Col>
+                  <Col className="text-center"><img src="src/assets/flow.svg" className="img-fluid py-5" alt="" /></Col>
                 </Card.Body>
               </Card>
             </Col>

@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <div className={`pt-5 pb-3 ${Styles.footer_bg}`}>
       <Container>
-        <Row>
-          <Col sm={6}>
+        <Row className="text-center text-lg-start">
+          <Col sm={12} lg={6}>
             <img
               src="src/assets/logo-white.svg"
               className="img-fluid"
@@ -27,19 +27,21 @@ const Footer = () => {
               className="mb-3"
               controlId="formHorizontalEmail"
             >
-              <Col sm={5}>
+              <div className="d-flex justify-content-center justify-content-lg-start">
                 <Form.Control
                   type="email"
                   className={Styles.input_email_text}
                   placeholder="Enter your Email"
                 />
-              </Col>
-              <Col sm={4}>
-                <Button className={`btn-sm px-3 `}>Get Started</Button>
-              </Col>
+                <Button className={`btn-sm px-3`}>Get Started</Button>
+              </div>
             </Form.Group>
           </Col>
-          <Col sm={6} className={`ps-5 ${Styles.left_border}`}>
+          <Col
+            sm={12}
+            lg={6}
+            className={`ps-lg-5 mt-5 mt-lg-0 ${Styles.left_border}`}
+          >
             <p className={Styles.started_font}>
               Let’s get started on something great
             </p>
@@ -52,8 +54,8 @@ const Footer = () => {
           </Col>
         </Row>
         <hr className={`mt-5 ${Styles.hrs}`} />
-        <Row>
-          <Col xl={3}>
+        <Row className="text-center text-lg-start">
+          <Col lg={3}>
             <p className={`mt-3 ${Styles.footer_heads}`}>Services</p>
             <p className={`mt-4 ${Styles.footer_subheads}`}>Web Developement</p>
             <p className={`${Styles.footer_subheads}`}>
@@ -64,14 +66,14 @@ const Footer = () => {
             <p className={`${Styles.footer_subheads}`}>UI/UX Designing</p>
           </Col>
 
-          <Col xl={2}>
+          <Col lg={2}>
             <p className={`mt-3 ${Styles.footer_heads}`}>Company</p>
             <p className={`mt-4 ${Styles.footer_subheads}`}>Case Studies</p>
             <p className={`${Styles.footer_subheads}`}>About Us</p>
             <p className={`${Styles.footer_subheads}`}>Portfolio</p>
           </Col>
 
-          <Col xl={2}>
+          <Col lg={2}>
             <p className={`mt-3 ${Styles.footer_heads}`}>Our Fields</p>
             <p className={`mt-4 ${Styles.footer_subheads}`}>Healthcare</p>
             <p className={`${Styles.footer_subheads}`}>Hotels</p>
@@ -79,7 +81,7 @@ const Footer = () => {
             <p className={`${Styles.footer_subheads}`}>Industries</p>
           </Col>
 
-          <Col xl={5}>
+          <Col lg={5}>
             <p className={`mt-3 ${Styles.footer_heads}`}>Connect With Us</p>
             <p className={`mt-4 ${Styles.footer_subheads}`}>
               <IoMailOpenOutline size={20} className="me-1 mb-1" />
