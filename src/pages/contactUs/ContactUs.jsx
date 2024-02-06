@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./ContactUsStyles.module.css";
 import { Button, Container } from "react-bootstrap";
-import ContactUsForm from "../../components/contactUsForm/ContactUsFOrm";
+import ContactUsForm from "../../components/contactUsForm/ContactUsForm";
 
 const ContactUs = () => {
   return (
