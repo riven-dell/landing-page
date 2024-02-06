@@ -43,7 +43,7 @@ const Home = () => {
             </Col>
             <Col xl={7} className="mx-auto text-center d-none d-lg-block">
               <img
-                src="/src/assets/bg1-1.png"
+                src="../../assets/bg1-1.png"
                 width={500}
                 className="img-fluid"
                 alt=""
@@ -71,7 +71,7 @@ const Home = () => {
                   </Col>
                   <Col className="text-center">
                     <img
-                      src="/src/assets/flow.svg"
+                      src="../../assets/Flow.svg"
                       className="img-fluid py-5"
                       alt=""
                     />
