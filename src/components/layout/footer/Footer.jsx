@@ -13,7 +13,7 @@ const Footer = () => {
         <Row className="text-center text-lg-start">
           <Col sm={12} lg={6}>
             <img
-              src="/src/assets/logo-white.svg"
+              src="/assets/logo-white.svg"
               className="img-fluid"
               width={130}
               alt=""

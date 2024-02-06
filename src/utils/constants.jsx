@@ -372,25 +372,25 @@ export const microservices = {
 export const caseStudy = [
   {
     cardHead: "E-commerce",
-    image: "/src/assets/home/ecommerce.webp",
+    image: "/assets/home/ecommerce.webp",
     linkUrl:
       "/casestudy/Accelerating-E-Commerce-Innovation-through-CI/CD-Transformation",
   },
   {
     cardHead: "AWS Migration",
-    image: "/src/assets/home/ecommerce.webp",
+    image: "/assets/home/ecommerce.webp",
     linkUrl:
       "/casestudy/Seamless-Migration-to-AWS-for-Cost-Efficiency-and-Scalability",
   },
   {
     cardHead: "Fault Tolerance",
-    image: "/src/assets/home/ecommerce.webp",
+    image: "/assets/home/ecommerce.webp",
     linkUrl:
       "/casestudy/Streamlining-Database-Management-and-Migration-for-Enhanced-Fault-Tolerance",
   },
   {
     cardHead: "Microservices",
-    image: "/src/assets/home/ecommerce.webp",
+    image: "/assets/home/ecommerce.webp",
     linkUrl:
       "/casestudy/Transitioning-from-Monolithic-to-Microservices-Architecture-for-Scalability",
   },

@@ -136,7 +136,7 @@ const CaseStudy = () => {
                     <p key={id} className={Styles.casestudy_pts}>
                       <span>
                         <img
-                          src="/src/assets/casestudy/bulletine.svg"
+                          src="/assets/casestudy/bulletine.svg"
                           className="img-fluid me-2"
                           alt=""
                         />
@@ -165,7 +165,7 @@ const CaseStudy = () => {
                         >
                           <span>
                             <img
-                              src="/src/assets/casestudy/whitebulletine.svg"
+                              src="/assets/casestudy/whitebulletine.svg"
                               className="img-fluid me-2"
                               alt=""
                             />
@@ -187,7 +187,7 @@ const CaseStudy = () => {
                     <p key={ind} className={Styles.casestudy_pts}>
                       <span>
                         <img
-                          src="/src/assets/casestudy/bulletine.svg"
+                          src="/assets/casestudy/bulletine.svg"
                           className="img-fluid me-2"
                           alt=""
                         />
