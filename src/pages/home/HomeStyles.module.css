@@ -82,11 +82,11 @@
   border: 0px !important;
 }
 
-.case_study_tag{
+.case_study_tag {
   font-family: DM Sans;
   font-weight: 500;
   border: 0px !important;
-  background-color: #E7EDFB;
+  background-color: #e7edfb;
   padding: 5px 0px !important;
   width: 8rem;
   border-radius: 5px;
@@ -94,10 +94,20 @@
   color: #3e58cc !important;
 }
 
-.case_study_card{
+.case_study_card {
   border: 0px !important;
-  font-family: Yantramanav;
-  font-weight: 500;
+  font-family: Yantramanav !important;
+  font-weight: 500 !important;
+  font-size: 17px !important;
   color: #212529 !important;
-  padding: 0px !important;
+  background-color: white !important;
+}
+
+.case_study_card:hover {
+  background-color: #1351d8 !important;
+  color: white !important;
+}
+
+.link_dec {
+  text-decoration: none !important;
 }

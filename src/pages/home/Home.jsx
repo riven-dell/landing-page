@@ -13,6 +13,9 @@ import Styles from "./HomeStyles.module.css";
 import "./HomeStyles.css";
 import { GoArrowUpRight } from "react-icons/go";
 import ContactUsForm from "../../components/contactUsForm/ContactUsFOrm";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { caseStudy } from "../../utils/constants";
 
 const Home = () => {
   return (
@@ -40,7 +43,7 @@ const Home = () => {
             </Col>
             <Col xl={7} className="mx-auto text-center d-none d-lg-block">
               <img
-                src="src/assets/bg1-1.png"
+                src="/src/assets/bg1-1.png"
                 width={500}
                 className="img-fluid"
                 alt=""
@@ -68,7 +71,7 @@ const Home = () => {
                   </Col>
                   <Col className="text-center">
                     <img
-                      src="src/assets/flow.svg"
+                      src="/src/assets/flow.svg"
                       className="img-fluid py-5"
                       alt=""
                     />
@@ -111,29 +114,44 @@ const Home = () => {
                   <Tab.Content className="mt-4">
                     <Tab.Pane eventKey="first">
                       <Row className="text-start">
-                        <Col xl={3}>
-                          <Card className={`${Styles.card_mod_expert}`}>
-                            <Card className={`${Styles.case_study_tag} ms-auto me-2 mt-1`}>
-                              <Card.Body className={`${Styles.case_study_tag} text-center`}>
-                                Web Devlopment
-                              </Card.Body>
-                            </Card>
+                        {caseStudy?.map((data, ind) => (
+                          <Col sm={3}>
+                            <Card className={`${Styles.card_mod_expert}`}>
+                              <Card
+                                className={`${Styles.case_study_tag} ms-auto me-2 mt-1`}
+                              >
+                                <Card.Body
+                                  className={`${Styles.case_study_tag} text-center`}
+                                >
+                                  {data?.cardHead}
+                                </Card.Body>
+                              </Card>
 
-                            <div>
-                              <img
-                                src="src/assets/home/ecommerce.webp"
-                                width={200}
-                                className="img-fluid"
-                                alt=""
-                              />
-                            </div>
-                          </Card>
-                          <Card className={`${Styles.case_study_card} mt-3 py-2 text-center`}>
-                            {/* <Card.Body className={Styles.case_}> */}
-                              Read Case Study
-                              {/* </Card.Body> */}
-                          </Card>
-                        </Col>
+                              <div>
+                                <img
+                                  src={data?.image}
+                                  width={200}
+                                  className="img-fluid"
+                                  alt=""
+                                />
+                              </div>
+                            </Card>
+                            <Link
+                              className={Styles.link_dec}
+                              to={data?.linkUrl}
+                            >
+                              <div className="d-grid gap-2">
+                                <Button
+                                  className={`${Styles.case_study_card} py-2 mt-3`}
+                                  size="sm"
+                                >
+                                  Read Case Study{" "}
+                                  <FaArrowRightLong className="ms-2" />
+                                </Button>
+                              </div>
+                            </Link>
+                          </Col>
+                        ))}
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">Second tab content</Tab.Pane>
