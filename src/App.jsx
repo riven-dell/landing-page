@@ -5,6 +5,7 @@ import Home from "./pages/home/Home";
 import Footer from "./components/layout/footer/Footer";
 import ContactUs from "./pages/contactUs/ContactUs";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CaseStudy from "./pages/caseStudy/CaseStudy";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" index element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/case" element={<CaseStudy />} />
         </Routes>
 
         <Footer />

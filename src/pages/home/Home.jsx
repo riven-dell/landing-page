@@ -39,7 +39,12 @@ const Home = () => {
               </Button>
             </Col>
             <Col xl={7} className="mx-auto text-center d-none d-lg-block">
-              <img src="src/assets/bg1-1.png" width={500} className="img-fluid" alt="" />
+              <img
+                src="src/assets/bg1-1.png"
+                width={500}
+                className="img-fluid"
+                alt=""
+              />
             </Col>
           </Row>
 
@@ -61,7 +66,13 @@ const Home = () => {
                       </div>
                     </Stack>
                   </Col>
-                  <Col className="text-center"><img src="src/assets/flow.svg" className="img-fluid py-5" alt="" /></Col>
+                  <Col className="text-center">
+                    <img
+                      src="src/assets/flow.svg"
+                      className="img-fluid py-5"
+                      alt=""
+                    />
+                  </Col>
                 </Card.Body>
               </Card>
             </Col>
@@ -100,14 +111,27 @@ const Home = () => {
                   <Tab.Content className="mt-4">
                     <Tab.Pane eventKey="first">
                       <Row className="text-start">
-                        <Col xl={7}>
-                          <Card className={Styles.card_mod_expert}>
-                            <Card.Body>Hello</Card.Body>
+                        <Col xl={3}>
+                          <Card className={`${Styles.card_mod_expert}`}>
+                            <Card className={`${Styles.case_study_tag} ms-auto me-2 mt-1`}>
+                              <Card.Body className={`${Styles.case_study_tag} text-center`}>
+                                Web Devlopment
+                              </Card.Body>
+                            </Card>
+
+                            <div>
+                              <img
+                                src="src/assets/home/ecommerce.webp"
+                                width={200}
+                                className="img-fluid"
+                                alt=""
+                              />
+                            </div>
                           </Card>
-                        </Col>
-                        <Col xl={5}>
-                          <Card className={Styles.card_mod_expert}>
-                            <Card.Body>Hello</Card.Body>
+                          <Card className={`${Styles.case_study_card} mt-3 py-2 text-center`}>
+                            {/* <Card.Body className={Styles.case_}> */}
+                              Read Case Study
+                              {/* </Card.Body> */}
                           </Card>
                         </Col>
                       </Row>

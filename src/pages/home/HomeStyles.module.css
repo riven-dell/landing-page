@@ -81,3 +81,23 @@
 .card_mod_expert {
   border: 0px !important;
 }
+
+.case_study_tag{
+  font-family: DM Sans;
+  font-weight: 500;
+  border: 0px !important;
+  background-color: #E7EDFB;
+  padding: 5px 0px !important;
+  width: 8rem;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #3e58cc !important;
+}
+
+.case_study_card{
+  border: 0px !important;
+  font-family: Yantramanav;
+  font-weight: 500;
+  color: #212529 !important;
+  padding: 0px !important;
+}

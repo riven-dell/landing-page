@@ -1,0 +1,109 @@
+.casestudy {
+  overflow-x: hidden;
+}
+.page_head {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 2.1rem;
+  color: #212529;
+}
+
+.hero_bg {
+  background-color: #f9fbff;
+}
+
+.case_study_head {
+  font-family: Syne;
+  font-size: 16px;
+  color: #1451d8;
+  letter-spacing: 8px;
+}
+
+.page_tag_line {
+  font-family: Syne;
+  font-size: 1.1rem;
+}
+
+.client_req_card {
+  border: 0px !important;
+  background-color: #f2fcf9 !important;
+  border-radius: 15px !important;
+}
+
+.client_head {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.client_body {
+  font-family: Syne;
+}
+
+.customer_challenge {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.challenge_subhead {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.casestudy_pts {
+  font-family: Syne;
+  font-weight: 500;
+  color: #393d41;
+}
+
+.client_sol_card {
+  background: url("../../assets/casestudy/bgoverlay.svg"), #0b5ed7 !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  color: #f2fcf9 !important;
+  border-radius: 15px !important;
+}
+
+.casestudy_pts2 {
+  font-family: Syne;
+  margin-left: 10px;
+}
+
+.conclution_card {
+  font-family: Syne;
+  font-weight: 500 !important;
+  background-color: #fef7f7 !important;
+  color: #212529 !important;
+  border: 0px !important;
+  border-radius: 15px !important;
+}
+
+.highlights_head {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.highlights_text {
+  font-family: Syne;
+  font-weight: 500 !important;
+  color: #393d41;
+  margin-top: -10px !important;
+}
+.color_blue {
+  color: #0b5ed7;
+}
+
+.color_orange {
+  color: #ef7179;
+}
+
+.color_green {
+  color: #00b686;
+}
+
+.color_yellow {
+  color: #eec600;
+}
