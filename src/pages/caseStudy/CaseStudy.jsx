@@ -17,7 +17,7 @@ const CaseStudy = () => {
   useEffect(() => {
     let updatedCaseStudy;
     switch (id) {
-      case "Accelerating-E-Commerce-Innovation-through-CI/CD-Transformation":
+      case "Accelerating-E-Commerce-Innovation-through-CI-CD-Transformation":
         updatedCaseStudy = ecommerce;
         break;
       case "Seamless-Migration-to-AWS-for-Cost-Efficiency-and-Scalability":
@@ -149,7 +149,7 @@ const CaseStudy = () => {
             </div>
             <div>
               <Card className={`mt-5 ${Styles.client_sol_card}`}>
-                <Card.Body className="p-5">
+                <Card.Body className="p-4 p-lg-5">
                   <p className={`${Styles.client_head}`}>
                     Solution Implementation
                   </p>

@@ -96,26 +96,26 @@ const Home = () => {
                 <Row>
                   <Nav
                     variant="pills"
-                    className={`bg-white d-flex justify-content-center rounded py-2 px-3 ${Styles.nav_tabs}`}
+                    className={`bg-white d-flex justify-content-between rounded py-2 px-3 ${Styles.nav_tabs}`}
                   >
-                    <Nav.Item className={`me-5 ${Styles.nav_tabs}`}>
+                    <Nav.Item className={`${Styles.nav_tabs}`}>
                       <Nav.Link eventKey="first">Cloud Transformation</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Web Developement</Nav.Link>
                     </Nav.Item>
-                    {/* <Nav.Item>
+                    <Nav.Item>
                       <Nav.Link eventKey="third">UI/UX Designing</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="four">Data Engineering</Nav.Link>
-                    </Nav.Item> */}
+                    </Nav.Item>
                   </Nav>
                   <Tab.Content className="mt-4">
                     <Tab.Pane eventKey="first">
                       <Row className="text-start">
                         {caseStudy?.map((data, ind) => (
-                          <Col sm={3}>
+                          <Col sm={6} lg={3}>
                             <Card className={`${Styles.card_mod_expert}`}>
                               <Card
                                 className={`${Styles.case_study_tag} ms-auto me-2 mt-1`}
@@ -142,7 +142,7 @@ const Home = () => {
                             >
                               <div className="d-grid gap-2">
                                 <Button
-                                  className={`${Styles.case_study_card} py-2 mt-3`}
+                                  className={`${Styles.case_study_card} py-2 mt-3 mb-3 mb-lg-0`}
                                   size="sm"
                                 >
                                   Read Case Study{" "}
@@ -154,7 +154,9 @@ const Home = () => {
                         ))}
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">Second tab content</Tab.Pane>
+                    <Tab.Pane eventKey="second">Coming Soon...</Tab.Pane>
+                    <Tab.Pane eventKey="third">Coming Soon...</Tab.Pane>
+                    <Tab.Pane eventKey="four">Coming Soon...</Tab.Pane>
                   </Tab.Content>
                 </Row>
               </Tab.Container>

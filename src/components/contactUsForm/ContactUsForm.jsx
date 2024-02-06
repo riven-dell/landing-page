@@ -10,7 +10,9 @@ const ContactUsForm = () => {
         <Row className="mx-lg-5">
           <Col xl={{ span: 7 }}>
             <Card className="border border-0 my-5">
-              <Card.Body className={`py-4 px-5 ${Styles.card_mod_contact}`}>
+              <Card.Body
+                className={`py-4 px-4 px-lg-5 ${Styles.card_mod_contact}`}
+              >
                 <p className={Styles.contact}>CONTACT</p>
                 <p className={Styles.connect_style}>Lets get in touch</p>
                 <p className={Styles.reach_out}>
@@ -86,7 +88,9 @@ const ContactUsForm = () => {
           </Col>
           <Col xl={5}>
             <Card className="border border-0 my-5 mx-xl-5">
-              <Card.Body className={`py-5 px-5 text-center text-lg-start ${Styles.card_mod_contact}`}>
+              <Card.Body
+                className={`py-5 px-5 text-center text-lg-start ${Styles.card_mod_contact}`}
+              >
                 <p className={Styles.show_num}>97%</p>
                 <p className={Styles.show_num_subtext}>Client Satisfaction</p>
                 <hr className={`my-4 ${Styles.hrs}`} />
