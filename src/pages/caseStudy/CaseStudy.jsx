@@ -17,7 +17,7 @@ const CaseStudy = () => {
   useEffect(() => {
     let updatedCaseStudy;
     switch (id) {
-      case "Streamlining-Database-Management-and-Migration-for-Enhanced-Fault-Tolerance":
+      case "Accelerating-E-Commerce-Innovation-through-CI/CD-Transformation":
         updatedCaseStudy = ecommerce;
         break;
       case "Seamless-Migration-to-AWS-for-Cost-Efficiency-and-Scalability":

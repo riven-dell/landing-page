@@ -374,7 +374,7 @@ export const caseStudy = [
     cardHead: "E-commerce",
     image: "/src/assets/home/ecommerce.webp",
     linkUrl:
-      "/casestudy/Streamlining-Database-Management-and-Migration-for-Enhanced-Fault-Tolerance",
+      "/casestudy/Accelerating-E-Commerce-Innovation-through-CI/CD-Transformation",
   },
   {
     cardHead: "AWS Migration",

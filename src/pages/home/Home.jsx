@@ -96,20 +96,20 @@ const Home = () => {
                 <Row>
                   <Nav
                     variant="pills"
-                    className={`bg-white d-flex justify-content-between rounded py-2 px-3 ${Styles.nav_tabs}`}
+                    className={`bg-white d-flex justify-content-center rounded py-2 px-3 ${Styles.nav_tabs}`}
                   >
-                    <Nav.Item className={Styles.nav_tabs}>
+                    <Nav.Item className={`me-5 ${Styles.nav_tabs}`}>
                       <Nav.Link eventKey="first">Cloud Transformation</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="second">Web Developement</Nav.Link>
                     </Nav.Item>
-                    <Nav.Item>
+                    {/* <Nav.Item>
                       <Nav.Link eventKey="third">UI/UX Designing</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="four">Data Engineering</Nav.Link>
-                    </Nav.Item>
+                    </Nav.Item> */}
                   </Nav>
                   <Tab.Content className="mt-4">
                     <Tab.Pane eventKey="first">
