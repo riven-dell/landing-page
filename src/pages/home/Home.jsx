@@ -12,7 +12,7 @@ import {
 import Styles from "./HomeStyles.module.css";
 import "./HomeStyles.css";
 import { GoArrowUpRight } from "react-icons/go";
-import ContactUsForm from "../../components/contactUsForm/ContactUsFOrm";
+import ContactUsForm from "../../components/contactUsForm/ContactUsForm";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { caseStudy } from "../../utils/constants";
